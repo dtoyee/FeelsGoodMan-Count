@@ -8,10 +8,10 @@ var options = {
         reconnect: true
     },
     identity: {
-        username: "FeelsGoodMan_count",
-        password: "oauth:ptwwvabd56ac1yorkaj33or14efwbp"
+        username: "",
+        password: ""
     },
-    channels: ["JapaneseSpiderCrab"]
+    channels: [""]
 };
 
 var client = new tmi.client(options);
@@ -28,5 +28,5 @@ client.on("chat", function (channel, userstate, message, self) {
 });
 
 setInterval(function() {
-    client.action('JapaneseSpiderCrab', 'FeelsGoodMan ' + feelsgoodmanCount.toLocaleString());
+    client.action('', 'FeelsGoodMan ' + feelsgoodmanCount.toLocaleString());
 }, sendEmoteCountTime);
